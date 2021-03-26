@@ -34,7 +34,7 @@ Then. This set up should yield the same result as on the screenshot
             
 (defn some-component []
   [:div {:style {:width "100%"}}
-   [autocomplete/autocomplete_widget
+   [autocomplete/autocomplete-widget
    ["albania" "algeria" "andorra" "angola"]
     {:can-enter-new? false
      :display-size 5
