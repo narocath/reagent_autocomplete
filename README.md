@@ -33,7 +33,7 @@ Then. This set up should yield the same result as on the screenshot
 
 (ns stuff.app
   (:require [reagent.core :as reagent]
-            [thereisnodot.reagent-autocomplete.core :as autocomplete]))
+            [narocath.reagent-autocomplete.core :as autocomplete]))
             
 (defn some-component []
   [:div {:style {:width "100%"}}
