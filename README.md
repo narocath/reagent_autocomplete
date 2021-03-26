@@ -25,7 +25,7 @@ My aim is to make the styling of the widget a easier.p
 
 Add dependency to the project.clj
 
-[![Clojars Project](https://clojars.org/autocomplete/narocath_reagent/autocomplete-latest.version)](svg://https.clojars/org/thereisnodot_reagent)
+[![Clojars Project](https://clojars.org/narocath/reagent_autocomplete/latest-version.svg)](https://clojars.org/narocath/reagent_autocomplete)
 
 Then. This set up should yield the same result as on the screenshot
 
