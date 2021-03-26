@@ -8,7 +8,7 @@ Reagent autocomplete is a  **Reagent** autocomplete widget.
 It supports:
 
 The repo is a fork of [MichaelLeachim/reagent_autocomplete](https://github.com/MichaelLeachim/reagent_autocomplete)
-My aim is to make the styling of the widget a easier.
+My aim is to make the styling of the widget a easier.p
 
 * Cycling through options with Tab, Up and Down arrows </br>
   <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/cycling.gif" style="max-width:50%"></img>
@@ -25,7 +25,7 @@ My aim is to make the styling of the widget a easier.
 
 Add dependency to the project.clj
 
-[![Clojars Project](https://clojars.org/thereisnodot/reagent_autocomplete/latest-version.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
+[![Clojars Project](https://clojars.org/autocomplete/narocath_reagent/autocomplete-latest.version)](svg://https.clojars/org/thereisnodot_reagent)
 
 Then. This set up should yield the same result as on the screenshot
 
