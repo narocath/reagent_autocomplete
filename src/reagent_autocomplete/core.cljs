@@ -60,12 +60,12 @@
    (fn [sl-bg-color] (str ".reagent-autocomplete-input:focus{outline:none;}.reagent-autocomplete-item:hover{background: " sl-bg-color "!important;}"))
 
    :render-click-submit-fn
-   (fn [can-submit? on-click]
+   (fn [can-submit? on-click selected-bg-color icn]
      (if can-submit?
        [:div
         {:on-click on-click
-         :style {:color (:background-color-selected selected-bg-color) :cursor "pointer"}}
-        [:img {:src (:search-icon icon)}]]))
+         :style {:color selected-bg-color :cursor "pointer"}}
+        [:img {:src icn}]]))
    :compare-fn
    (fn [cur-input item]
      "Checking whether input matches with the item"
@@ -110,7 +110,7 @@
                 click-submit-classes parent-div-classes id style?
                 can-enter-new? display-size placeholder autofocus?
                 dropdown-style input-style background-input-style parent-div-style
-                click-submit-style general-style
+                click-submit-style general-style seach-icon
                 selected-bg-color !selected-bg-color
                 compare-fn validate-fn submit-fn render-fn  render-click-submit-fn]}
         (merge icon selected-bg-color default-params params)
@@ -141,7 +141,8 @@
                    [render-click-submit-fn
                     (submit-policy cur-input complete-placeholder can-enter-new? has-auto-complete?
                                    #(not (empty? %)))
-                    #(submit-policy cur-input complete-placeholder can-enter-new? has-auto-complete? wrap-submit-fn)]]
+                    #(submit-policy cur-input complete-placeholder can-enter-new? has-auto-complete? wrap-submit-fn)
+                    selected-bg-color search-icon]]
                   [:input.reagent-autocomplete-input
                    {:value cur-input
                     :placeholder placeholder
@@ -199,7 +200,8 @@
                   [render-click-submit-fn
                    (submit-policy cur-input complete-placeholder can-enter-new? has-auto-complete?
                                   #(not (empty? %)))
-                   #(submit-policy cur-input complete-placeholder can-enter-new? has-auto-complete? wrap-submit-fn)]]
+                   #(submit-policy cur-input complete-placeholder can-enter-new? has-auto-complete? wrap-submit-fn)
+                   selected-bg-color search-icon]]
                  [:input.reagent-autocomplete-input
                   {:value cur-input
                    :placeholder placeholder
