@@ -1,4 +1,4 @@
-(defproject narocath/reagent_autocomplete "0.2.2"
+(defproject narocath/reagent_autocomplete "0.2.3"
   :description "A simple pure ClojureScript autocomplete widget"
   :url "https://github.com/narocath/reagent_autocomplete"
   :license {:name "MIT"
