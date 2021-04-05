@@ -28,7 +28,6 @@
 (def icon
   {:search-icon search-icon})
 
-
 (def default-params
   {:app-state (reagent/atom {:cur-index 0 :cur-input ""})
 
@@ -82,7 +81,6 @@
      [:div.reagent-autocomplete-item {:style {:padding "0.5em" :background (if  selected? sl-bg-color !sl-bg-color) :font-size "1em" :cursor "pointer"}}
       [:span cur-input]
       [:b (apply str (drop (count cur-input) text))]])})
-
 
 (defn- e->content
   [e]

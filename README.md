@@ -148,7 +148,15 @@ Defaults are these.
 
 
 ```clojure 
-  {:dropdown-style
+  {
+   :dropdown-classes nil
+   :input-classes nil
+   :background-input-classes nil
+   :click-submit-classes nil
+   :parent-div-classes nil
+   :id nil
+   :style? true
+   :dropdown-style
    {:position "absolute" :right "0" :left "0" 
     :top "4em" :box-shadow "grey 1px 2px 1px 0px" 
     :background "white" :overflow "hidden"  :border "none" :z-index "999"}
